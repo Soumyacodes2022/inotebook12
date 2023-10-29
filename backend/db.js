@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
-const mongoURI= "mongodb://localhost:27017/inotebook/login"
+const mongoURI= "mongodb://127.0.0.1:27017"
 
-const connectToMongo=()=>{
-    mongoose.connect(mongoURI)
+async function connectToMongo(){
+  await mongoose.connect(mongoURI)
 }
+
 module.exports=connectToMongo

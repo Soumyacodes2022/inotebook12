@@ -4,9 +4,9 @@ connectToMongo()
 
 const app= express()
 const port= 3000
-
+app.use('/api/auth',require("./routes/auth"))
 app.get('/',(req,res)=>{
-    res.send('Hello World')
+    res.send("Hello, This is Soumya")
 })
 app.listen(port,()=>{
     console.log(`server started at http://localhost:${port}`)
