@@ -11,6 +11,6 @@ app.get('/',(req,res)=>{
     res.send("Hello, This is Soumya")
 })
 app.listen(port,()=>{
-    console.log(`server started at http://localhost:${port}`)
+    console.log(`iNotebook Backend started at http://localhost:${port}`)
 })
 
